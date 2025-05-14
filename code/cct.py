@@ -60,8 +60,9 @@ def analyze_trace(trace, data):
         trace,
         var_names=["D", "Z"],
         coords={"D_dim_0": [0, 1, 2], "Z_dim_0": [0, 1, 2]},
-        kind="kde"
-)
+        kind="kde",
+        figsize=(10,10)
+    )
     plt.suptitle("Posterior Pair Plot", fontsize=14, y=1.02)
     plt.tight_layout()
     plt.savefig("posterior_pairplot.png")
