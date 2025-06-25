@@ -1,5 +1,5 @@
 # UCI Coursework Project
-This project involved extracting and cleaning up psuedo-data in preparation for thematic analysis. Data extraction and visualizations were manually coded in Python and the following analysis is my interpretation of the emerging patterns.
+This project involved extracting and cleaning up pseudo-data in preparation for thematic analysis. Data extraction and visualizations were manually coded in Python and the following analysis is my interpretation of the emerging patterns.
 
 ## Analysis
   Cultural Consensus Theory argues that the agreement between informants is proportional to their knowledge of a shared cultural consensus. This implementation of the Cultural Consensus Theory model uses PyMC to analyze a dataset and estimate two components: informant competence (Dᵢ for each informant i) and cultural consensus answers (Zⱼ for each question j). The observed informant responses (Xᵢⱼ) from N informants to M questions is modulated by informant competence Dᵢ along with the consensus answer Zⱼ. For each response Xᵢⱼ, the probability that a more competent informant is more likely to agree with the answer Zⱼ is represented by p = Zⱼ × Dᵢ + (1 − Zⱼ) × (1 − Dᵢ). 
